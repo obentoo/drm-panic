@@ -33,7 +33,7 @@ Example: `https://drm-panic.obentoo.org/#?a=x86_64&v=6.10.0&z=228502451474619601
 | `panic_report.js` | decoder; inserts every URL value as text, never as HTML |
 | `pako_inflate.min.js` | pako 2.1.0 `dist/pako_inflate.min.js`, byte-identical to the npm tarball (`sha512-w+eufiZ1…og2ug==`) |
 | `style.css` | styles |
-| `_headers` | response headers (CSP, no-referrer, nosniff) for Cloudflare Pages |
+| `_headers` | response headers (CSP, no-referrer, nosniff); `no-transform` stops the zone's Web Analytics from injecting its beacon |
 
 ## Origin
 

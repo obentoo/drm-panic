@@ -3,4 +3,4 @@
   Referrer-Policy: no-referrer
   X-Content-Type-Options: nosniff
   Permissions-Policy: camera=(), microphone=(), geolocation=(), clipboard-write=(self)
-  Cache-Control: public, max-age=3600
+  Cache-Control: public, max-age=3600, no-transform
