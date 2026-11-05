@@ -1,13 +1,39 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+	<meta name="referrer" content="no-referrer">
+	<title>bentoo kernel panic report</title>
+	<link rel="stylesheet" href="style.css">
+</head>
 <body>
-        <title>Panic Report</title>
-        <h1>Panic Report</h1>
-        <div id="main">
-        </div>
-        <script type="text/javascript" src="pako_inflate.min.js"></script>
-        <script type="text/javascript" src="panic_report.js"></script>
+	<h1>bentoo kernel panic report</h1>
+	<p>
+		Your computer stopped because the Linux kernel hit an error it could not
+		recover from (a <em>kernel panic</em>). The QR code on the panic screen
+		carries the last kernel messages; they are shown below.
+	</p>
+	<p class="privacy">
+		The data travels in the part of the address after <code>#</code>, which
+		your browser never sends to any server. It is decoded on this device
+		only.
+	</p>
+	<div id="main"></div>
+	<p id="actions" hidden>
+		<button type="button" id="copy">Copy report</button>
+	</p>
+	<h2>Reporting it</h2>
+	<ol>
+		<li>Copy the report above.</li>
+		<li>Open an issue at
+			<a href="https://github.com/obentoo/bentoo/issues" rel="noreferrer">github.com/obentoo/bentoo/issues</a>,
+			paste the report and say what the machine was doing when it stopped.</li>
+		<li>If the report names a driver or module (lines after
+			<code>Modules linked in:</code>), include the package that installed it.</li>
+	</ol>
+	<script src="pako_inflate.min.js"></script>
+	<script src="panic_report.js"></script>
 </body>
-
 </html>

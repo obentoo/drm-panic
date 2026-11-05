@@ -1,0 +1,4 @@
+body { font-family: system-ui, sans-serif; max-width: 60rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
+pre { background: #111; color: #eee; padding: 1rem; overflow-x: auto; white-space: pre-wrap; word-break: break-word; }
+.privacy { color: #555; font-size: 0.9rem; }
+.error { color: #b00020; }
