@@ -1,0 +1,14 @@
+{
+	// Static files only: no Worker script runs, Cloudflare serves src/ as is.
+	// src/_headers sets the CSP and the other response headers.
+	"name": "drm-panic",
+	"compatibility_date": "2026-11-01",
+	"assets": {
+		"directory": "./src"
+	},
+	// custom_domain makes wrangler create the DNS record and the certificate.
+	"routes": [
+		{ "pattern": "drm-panic.obentoo.org", "custom_domain": true }
+	],
+	"workers_dev": false
+}
